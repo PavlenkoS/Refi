@@ -1,5 +1,5 @@
 server:
-  port: ${SERVICE_PORT:9090}
+  port: ${SERVICE_PORT:8080}
 dealFieldType: '
     XXX:Islamic Deal Product Name (Internal Identifier),
     XXX:IDFA Product Code (Internal Identifer),
