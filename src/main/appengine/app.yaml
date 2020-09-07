@@ -6,10 +6,26 @@ handlers:
   - url: /.*
     script: this field is required, but ignored
 
-readiness_check:
-  app_start_timeout_sec: 1600
 manual_scaling:
   instances: 1
+resources:
+  cpu: 1
+  memory_gb: 3.75
+  disk_size_gb: 10
+
+#liveness_check:
+#  check_interval_sec: 120
+#  timeout_sec: 40
+#  failure_threshold: 5
+#  success_threshold: 5
+#  initial_delay_sec: 3500
+#
+#readiness_check:
+#  check_interval_sec: 120
+#  timeout_sec: 40
+#  failure_threshold: 5
+#  success_threshold: 5
+#  app_start_timeout_sec: 3500
 
 ## Application Resources
 #resources:
